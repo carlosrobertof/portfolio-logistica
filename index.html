@@ -9,7 +9,7 @@
     :root {
       --bg: #06101d;
       --bg-2: #0a1527;
-      --surface: rgba(14, 24, 42, 0.88);
+      --surface: rgba(14, 24, 42, 0.9);
       --surface-2: rgba(255, 255, 255, 0.03);
       --line: rgba(148, 163, 184, 0.16);
       --text: #e8f0fb;
@@ -18,9 +18,6 @@
       --primary: #4cc9f0;
       --primary-2: #67d8f8;
       --glow: rgba(76, 201, 240, 0.18);
-      --success: #22c55e;
-      --warn: #facc15;
-      --danger: #ef4444;
       --shadow: 0 20px 40px rgba(0,0,0,0.32);
       --radius: 24px;
       --radius-md: 18px;
@@ -53,6 +50,13 @@
       margin: 0 auto;
     }
 
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
     .nav {
       position: sticky;
       top: 0;
@@ -65,7 +69,7 @@
     .nav-inner {
       width: min(92%, var(--max));
       margin: 0 auto;
-      min-height: 74px;
+      min-height: 70px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -101,25 +105,18 @@
     }
 
     .hero {
-      padding: 62px 0 24px;
+      padding: 54px 0 20px;
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1.18fr 0.82fr;
-      gap: 24px;
+      gap: 22px;
       align-items: stretch;
     }
 
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
     .hero-main {
-      padding: 42px;
+      padding: 40px;
       position: relative;
       overflow: hidden;
     }
@@ -149,7 +146,7 @@
     }
 
     h1 {
-      margin: 0 0 18px;
+      margin: 0 0 16px;
       font-size: 3rem;
       line-height: 1.05;
       color: var(--title);
@@ -164,12 +161,12 @@
       margin: 0;
       max-width: 760px;
       color: var(--muted);
-      line-height: 1.85;
-      font-size: 1.05rem;
+      line-height: 1.8;
+      font-size: 1.04rem;
     }
 
     .hero-mini {
-      margin-top: 18px;
+      margin-top: 16px;
       color: #d8edff;
       font-weight: 700;
       line-height: 1.8;
@@ -179,15 +176,15 @@
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
+      gap: 12px;
+      margin-top: 26px;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 48px;
+      min-height: 46px;
       padding: 0 18px;
       border-radius: 12px;
       font-weight: 700;
@@ -217,9 +214,9 @@
     }
 
     .hero-side {
-      padding: 22px;
+      padding: 20px;
       display: grid;
-      gap: 14px;
+      gap: 12px;
     }
 
     .impact-card {
@@ -238,21 +235,21 @@
     .impact-card p {
       margin: 0;
       color: var(--muted);
-      line-height: 1.7;
+      line-height: 1.68;
       font-size: 0.96rem;
     }
 
     .section {
-      padding: 18px 0;
+      padding: 16px 0;
     }
 
     .section-heading {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
 
     .section-heading h2 {
-      margin: 0 0 10px;
-      font-size: 2rem;
+      margin: 0 0 8px;
+      font-size: 1.95rem;
       color: var(--title);
     }
 
@@ -260,16 +257,16 @@
       margin: 0;
       max-width: 860px;
       color: var(--muted);
-      line-height: 1.8;
+      line-height: 1.75;
     }
 
     .projects-grid {
       display: grid;
-      gap: 22px;
+      gap: 20px;
     }
 
     .project {
-      padding: 30px;
+      padding: 28px;
     }
 
     .project-top {
@@ -278,7 +275,7 @@
       align-items: center;
       gap: 14px;
       flex-wrap: wrap;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .badge {
@@ -296,14 +293,14 @@
 
     .project h3 {
       margin: 0 0 10px;
-      font-size: 1.78rem;
+      font-size: 1.7rem;
       color: var(--title);
     }
 
     .project-desc {
-      margin: 0 0 18px;
+      margin: 0 0 16px;
       color: var(--muted);
-      line-height: 1.85;
+      line-height: 1.8;
     }
 
     iframe {
@@ -345,7 +342,7 @@
       margin: 0;
       padding-left: 18px;
       color: var(--muted);
-      line-height: 1.9;
+      line-height: 1.85;
     }
 
     .code-block {
@@ -360,20 +357,28 @@
       white-space: pre-wrap;
     }
 
-    .code-line-red { color: #ff5f56; }
+    .code-line-red { color: #ff6b6b; }
     .code-line-yellow { color: #ffd54a; }
     .code-line-green { color: #33d17a; }
     .code-line-cyan { color: #86e1ff; }
 
     .project-action {
-      margin-top: 20px;
+      margin-top: 18px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
     }
 
+    .mobile-details {
+      display: none;
+    }
+
+    .desktop-only {
+      display: block;
+    }
+
     .about-box {
-      padding: 26px;
+      padding: 24px;
     }
 
     .about-grid {
@@ -385,7 +390,7 @@
     .about-text p {
       margin: 0;
       color: var(--muted);
-      line-height: 1.9;
+      line-height: 1.85;
     }
 
     .tag-list {
@@ -434,20 +439,20 @@
     }
 
     .skill-card {
-      padding: 22px;
+      padding: 20px;
     }
 
     .skill-card h3 {
       margin: 0 0 10px;
       color: #fff;
-      font-size: 1.06rem;
+      font-size: 1.03rem;
     }
 
     .skill-card p {
       margin: 0;
       color: var(--muted);
-      line-height: 1.75;
-      font-size: 0.96rem;
+      line-height: 1.7;
+      font-size: 0.95rem;
     }
 
     .contact-grid {
@@ -457,7 +462,7 @@
     }
 
     .contact-card {
-      padding: 24px;
+      padding: 22px;
     }
 
     .contact-card h3 {
@@ -467,7 +472,7 @@
 
     .contact-card p {
       color: var(--muted);
-      line-height: 1.8;
+      line-height: 1.75;
       margin-bottom: 12px;
     }
 
@@ -489,6 +494,10 @@
 
     .contact-link:hover {
       background: rgba(255,255,255,0.06);
+    }
+
+    details.mobile-accordion {
+      display: none;
     }
 
     footer {
@@ -517,23 +526,29 @@
       }
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 768px) {
       .nav-inner {
-        padding: 12px 0;
+        padding: 10px 0;
         flex-direction: column;
         justify-content: center;
+        min-height: auto;
       }
 
       .menu {
         justify-content: center;
+        gap: 14px;
+      }
+
+      .menu a {
+        font-size: 0.9rem;
       }
 
       .hero {
-        padding-top: 42px;
+        padding-top: 36px;
+        padding-bottom: 10px;
       }
 
       .hero-main,
-      .hero-side,
       .project,
       .skill-card,
       .contact-card,
@@ -542,19 +557,118 @@
       }
 
       .hero-main {
-        padding: 28px;
+        padding: 26px;
       }
 
       h1 {
-        font-size: 2.15rem;
+        font-size: 2rem;
+        line-height: 1.08;
+      }
+
+      .hero-main p {
+        font-size: 0.97rem;
+        line-height: 1.7;
+      }
+
+      .hero-mini {
+        font-size: 0.92rem;
+        line-height: 1.65;
+      }
+
+      .hero-side {
+        display: none;
+      }
+
+      .section {
+        padding: 12px 0;
+      }
+
+      .section-heading h2 {
+        font-size: 1.55rem;
+      }
+
+      .section-heading p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+      }
+
+      .project {
+        padding: 20px;
+      }
+
+      .project h3 {
+        font-size: 1.28rem;
+      }
+
+      .project-desc {
+        font-size: 0.95rem;
+        line-height: 1.65;
       }
 
       iframe {
-        height: 420px;
+        height: 260px;
+        margin-bottom: 14px;
       }
 
-      .skills-grid {
+      .desktop-only {
+        display: none;
+      }
+
+      .mobile-details {
+        display: block;
+      }
+
+      details.mobile-accordion {
+        display: block;
+        margin-top: 10px;
+      }
+
+      details.mobile-accordion summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        border-radius: 14px;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid var(--line);
+        color: #eef7ff;
+        font-weight: 700;
+      }
+
+      details.mobile-accordion summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details.mobile-accordion[open] summary {
+        margin-bottom: 12px;
+      }
+
+      .project-panels,
+      .project-panels-3,
+      .skills-grid,
+      .contact-grid,
+      .about-grid {
         grid-template-columns: 1fr;
+      }
+
+      .panel {
+        padding: 16px;
+      }
+
+      .about-box {
+        padding: 20px;
+      }
+
+      .tag-list {
+        gap: 8px;
+      }
+
+      .tag {
+        font-size: 0.86rem;
+        padding: 8px 12px;
+      }
+
+      .contact-card {
+        padding: 20px;
       }
     }
   </style>
@@ -602,26 +716,15 @@
       <div class="card hero-side">
         <div class="impact-card">
           <h3>Dashboards com leitura gerencial</h3>
-          <p>
-            Visualizações voltadas para acompanhamento de indicadores operacionais,
-            leitura de performance e suporte à tomada de decisão.
-          </p>
+          <p>Visualizações voltadas para acompanhamento de indicadores operacionais, leitura de performance e suporte à tomada de decisão.</p>
         </div>
-
         <div class="impact-card">
           <h3>Aplicação em logística e planejamento</h3>
-          <p>
-            Projetos estruturados para dialogar com operação logística, planejamento,
-            controle e acompanhamento analítico.
-          </p>
+          <p>Projetos estruturados para dialogar com operação logística, planejamento, controle e acompanhamento analítico.</p>
         </div>
-
         <div class="impact-card">
           <h3>Visão de sistema e processo</h3>
-          <p>
-            Conhecimento aplicado a rotinas logísticas conectadas a ERP, com referência
-            a SAP S/4HANA, EWM e MM em contextos de estoque, materiais e armazenagem.
-          </p>
+          <p>Conhecimento aplicado a rotinas logísticas conectadas a ERP, com referência a SAP S/4HANA, EWM e MM.</p>
         </div>
       </div>
     </div>
@@ -631,10 +734,7 @@
     <div class="container">
       <div class="section-heading">
         <h2>Projetos</h2>
-        <p>
-          Dashboards e aplicações desenvolvidos para demonstrar análise prática,
-          indicadores e visualização de dados em logística e planejamento.
-        </p>
+        <p>Dashboards e aplicações desenvolvidos para demonstrar análise prática, indicadores e visualização de dados em logística e planejamento.</p>
       </div>
 
       <div class="projects-grid">
@@ -645,10 +745,8 @@
           </div>
 
           <h3>📦 Gestão de Estoque e Indicadores Logísticos</h3>
-
           <p class="project-desc">
-            Dashboard interativo desenvolvido para acompanhamento de estoque, com foco em giro,
-            cobertura, ruptura e identificação de oportunidades de melhoria operacional.
+            Dashboard interativo desenvolvido para acompanhamento de estoque, com foco em giro, cobertura, ruptura e identificação de oportunidades de melhoria operacional.
           </p>
 
           <iframe
@@ -657,26 +755,55 @@
             allowFullScreen="true">
           </iframe>
 
-          <div class="project-panels">
-            <div class="panel">
-              <h4>Principais análises</h4>
-              <ul>
-                <li>Giro de estoque por item</li>
-                <li>Cobertura atual dos produtos</li>
-                <li>Identificação de ruptura</li>
-                <li>Leitura de excesso e baixa cobertura</li>
-              </ul>
-            </div>
+          <div class="desktop-only">
+            <div class="project-panels">
+              <div class="panel">
+                <h4>Principais análises</h4>
+                <ul>
+                  <li>Giro de estoque por item</li>
+                  <li>Cobertura atual dos produtos</li>
+                  <li>Identificação de ruptura</li>
+                  <li>Leitura de excesso e baixa cobertura</li>
+                </ul>
+              </div>
 
-            <div class="panel">
-              <h4>Aplicação analítica</h4>
-              <ul>
-                <li>Leitura de risco operacional</li>
-                <li>Priorização de reposição</li>
-                <li>Visualização de capital parado</li>
-                <li>Base para revisão de planejamento</li>
-              </ul>
+              <div class="panel">
+                <h4>Aplicação analítica</h4>
+                <ul>
+                  <li>Leitura de risco operacional</li>
+                  <li>Priorização de reposição</li>
+                  <li>Visualização de capital parado</li>
+                  <li>Base para revisão de planejamento</li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div class="mobile-details">
+            <details class="mobile-accordion">
+              <summary>Ver detalhes do projeto</summary>
+              <div class="project-panels">
+                <div class="panel">
+                  <h4>Principais análises</h4>
+                  <ul>
+                    <li>Giro de estoque por item</li>
+                    <li>Cobertura atual dos produtos</li>
+                    <li>Identificação de ruptura</li>
+                    <li>Leitura de excesso e baixa cobertura</li>
+                  </ul>
+                </div>
+
+                <div class="panel">
+                  <h4>Aplicação analítica</h4>
+                  <ul>
+                    <li>Leitura de risco operacional</li>
+                    <li>Priorização de reposição</li>
+                    <li>Visualização de capital parado</li>
+                    <li>Base para revisão de planejamento</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
           </div>
         </article>
 
@@ -686,10 +813,8 @@
           </div>
 
           <h3>🚛 Análise de Transporte Logístico</h3>
-
           <p class="project-desc">
-            Dashboard voltado para análise de custos logísticos, eficiência operacional e acompanhamento
-            de desempenho no transporte, com foco em leitura de performance e apoio gerencial.
+            Dashboard voltado para análise de custos logísticos, eficiência operacional e acompanhamento de desempenho no transporte, com foco em leitura de performance e apoio gerencial.
           </p>
 
           <iframe
@@ -698,26 +823,55 @@
             allowFullScreen="true">
           </iframe>
 
-          <div class="project-panels">
-            <div class="panel">
-              <h4>Principais análises</h4>
-              <ul>
-                <li>Custo por operação</li>
-                <li>Desempenho logístico</li>
-                <li>Leitura de gargalos</li>
-                <li>KPIs de eficiência no transporte</li>
-              </ul>
-            </div>
+          <div class="desktop-only">
+            <div class="project-panels">
+              <div class="panel">
+                <h4>Principais análises</h4>
+                <ul>
+                  <li>Custo por operação</li>
+                  <li>Desempenho logístico</li>
+                  <li>Leitura de gargalos</li>
+                  <li>KPIs de eficiência no transporte</li>
+                </ul>
+              </div>
 
-            <div class="panel">
-              <h4>Aplicação analítica</h4>
-              <ul>
-                <li>Identificação de operações mais custosas</li>
-                <li>Comparação de performance operacional</li>
-                <li>Oportunidades de otimização</li>
-                <li>Suporte à leitura gerencial</li>
-              </ul>
+              <div class="panel">
+                <h4>Aplicação analítica</h4>
+                <ul>
+                  <li>Identificação de operações mais custosas</li>
+                  <li>Comparação de performance operacional</li>
+                  <li>Oportunidades de otimização</li>
+                  <li>Suporte à leitura gerencial</li>
+                </ul>
+              </div>
             </div>
+          </div>
+
+          <div class="mobile-details">
+            <details class="mobile-accordion">
+              <summary>Ver detalhes do projeto</summary>
+              <div class="project-panels">
+                <div class="panel">
+                  <h4>Principais análises</h4>
+                  <ul>
+                    <li>Custo por operação</li>
+                    <li>Desempenho logístico</li>
+                    <li>Leitura de gargalos</li>
+                    <li>KPIs de eficiência no transporte</li>
+                  </ul>
+                </div>
+
+                <div class="panel">
+                  <h4>Aplicação analítica</h4>
+                  <ul>
+                    <li>Identificação de operações mais custosas</li>
+                    <li>Comparação de performance operacional</li>
+                    <li>Oportunidades de otimização</li>
+                    <li>Suporte à leitura gerencial</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
           </div>
         </article>
 
@@ -727,38 +881,37 @@
           </div>
 
           <h3>🧠 Automação e Análise de Estoque com Python</h3>
-
           <p class="project-desc">
-            Projeto desenvolvido para automatizar a análise de estoque, identificando itens em ruptura,
-            excesso e baixa cobertura, com geração de alertas e apoio à tomada de decisão operacional.
+            Projeto desenvolvido para automatizar a análise de estoque, identificando itens em ruptura, excesso e baixa cobertura, com geração de alertas e apoio à tomada de decisão operacional.
           </p>
 
-          <div class="project-panels-3">
-            <div class="panel">
-              <h4>📌 Funcionalidades</h4>
-              <ul>
-                <li>Identificação automática de produtos em ruptura</li>
-                <li>Detecção de produtos com baixa cobertura</li>
-                <li>Identificação de excesso de estoque</li>
-                <li>Classificação de prioridades</li>
-                <li>Geração de relatórios e alertas</li>
-              </ul>
-            </div>
+          <div class="desktop-only">
+            <div class="project-panels-3">
+              <div class="panel">
+                <h4>📌 Funcionalidades</h4>
+                <ul>
+                  <li>Identificação automática de produtos em ruptura</li>
+                  <li>Detecção de produtos com baixa cobertura</li>
+                  <li>Identificação de excesso de estoque</li>
+                  <li>Classificação de prioridades</li>
+                  <li>Geração de relatórios e alertas</li>
+                </ul>
+              </div>
 
-            <div class="panel">
-              <h4>🛠️ Tecnologias utilizadas</h4>
-              <ul>
-                <li>Python 3</li>
-                <li>Pandas</li>
-                <li>CSV / Excel</li>
-                <li>Lógica de negócio aplicada</li>
-                <li>Análise de dados</li>
-              </ul>
-            </div>
+              <div class="panel">
+                <h4>🛠️ Tecnologias utilizadas</h4>
+                <ul>
+                  <li>Python 3</li>
+                  <li>Pandas</li>
+                  <li>CSV / Excel</li>
+                  <li>Lógica de negócio aplicada</li>
+                  <li>Análise de dados</li>
+                </ul>
+              </div>
 
-            <div class="panel">
-              <h4>📊 Exemplo de saída</h4>
-              <div class="code-block"><span class="code-line-cyan">RELATÓRIO DE ANÁLISE DE ESTOQUE</span>
+              <div class="panel">
+                <h4>📊 Exemplo de saída</h4>
+                <div class="code-block"><span class="code-line-cyan">RELATÓRIO DE ANÁLISE DE ESTOQUE</span>
 
 <span class="code-line-red">Produtos em ruptura: 1</span>
 <span class="code-line-yellow">Produtos com baixa cobertura: 8</span>
@@ -768,31 +921,80 @@ Itens com prioridade crítica: 1
 Categoria com maior risco: Alimentos
 
 Relatório gerado com sucesso.</div>
+              </div>
+            </div>
+
+            <div class="project-panels" style="margin-top:16px;">
+              <div class="panel">
+                <h4>💡 Benefícios da apresentação</h4>
+                <ul>
+                  <li>Apoio à tomada de decisão</li>
+                  <li>Redução de risco de ruptura</li>
+                  <li>Melhor controle de capital em estoque</li>
+                  <li>Priorização de ações operacionais</li>
+                  <li>Suporte ao planejamento logístico</li>
+                </ul>
+              </div>
+
+              <div class="panel">
+                <h4>🚀 Aplicação prática</h4>
+                <ul>
+                  <li>Monitoramento de estoque e cobertura</li>
+                  <li>Identificação de riscos operacionais</li>
+                  <li>Automação de análises repetitivas</li>
+                  <li>Agilidade na leitura de grandes bases</li>
+                  <li>Base para decisões de reposição</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="project-panels" style="margin-top:16px;">
-            <div class="panel">
-              <h4>💡 Benefícios da apresentação</h4>
-              <ul>
-                <li>Apoio à tomada de decisão</li>
-                <li>Redução de risco de ruptura</li>
-                <li>Melhor controle de capital em estoque</li>
-                <li>Priorização de ações operacionais</li>
-                <li>Suporte ao planejamento logístico</li>
-              </ul>
-            </div>
+          <div class="mobile-details">
+            <details class="mobile-accordion">
+              <summary>Ver detalhes do projeto Python</summary>
 
-            <div class="panel">
-              <h4>🚀 Aplicação prática</h4>
-              <ul>
-                <li>Monitoramento de estoque e cobertura</li>
-                <li>Identificação de riscos operacionais</li>
-                <li>Automação de análises repetitivas</li>
-                <li>Agilidade na leitura de grandes bases</li>
-                <li>Base para decisões de reposição</li>
-              </ul>
-            </div>
+              <div class="project-panels">
+                <div class="panel">
+                  <h4>Funcionalidades</h4>
+                  <ul>
+                    <li>Ruptura</li>
+                    <li>Baixa cobertura</li>
+                    <li>Excesso de estoque</li>
+                    <li>Prioridades</li>
+                    <li>Relatórios</li>
+                  </ul>
+                </div>
+
+                <div class="panel">
+                  <h4>Tecnologias</h4>
+                  <ul>
+                    <li>Python 3</li>
+                    <li>Pandas</li>
+                    <li>CSV / Excel</li>
+                    <li>Análise de dados</li>
+                  </ul>
+                </div>
+
+                <div class="panel">
+                  <h4>Exemplo de saída</h4>
+                  <div class="code-block">Ruptura: 1
+Baixa cobertura: 8
+Excesso: 6
+Prioridade crítica: 1
+Maior risco: Alimentos</div>
+                </div>
+
+                <div class="panel">
+                  <h4>Benefícios</h4>
+                  <ul>
+                    <li>Apoio à decisão</li>
+                    <li>Redução de ruptura</li>
+                    <li>Controle de estoque</li>
+                    <li>Suporte ao planejamento</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
           </div>
 
           <div class="project-action">
@@ -810,17 +1012,14 @@ Relatório gerado com sucesso.</div>
     <div class="container">
       <div class="section-heading">
         <h2>Sobre</h2>
-        <p>
-          Portfólio com foco em dashboards, indicadores e análise aplicada à logística e planejamento.
-        </p>
+        <p>Portfólio com foco em dashboards, indicadores e análise aplicada à logística e planejamento.</p>
       </div>
 
       <div class="card about-box">
         <div class="about-grid">
           <div class="about-text">
             <p>
-              Projetos desenvolvidos para demonstrar estruturação de dados, construção de indicadores,
-              visualização de performance operacional e leitura analítica aplicada a contextos logísticos.
+              Projetos desenvolvidos para demonstrar estruturação de dados, construção de indicadores, visualização de performance operacional e leitura analítica aplicada a contextos logísticos.
             </p>
 
             <div class="tag-list">
@@ -857,10 +1056,7 @@ Relatório gerado com sucesso.</div>
     <div class="container">
       <div class="section-heading">
         <h2>Competências em destaque</h2>
-        <p>
-          Áreas nas quais os projetos demonstram aplicação prática, leitura analítica
-          e construção de dashboards voltados à logística e planejamento.
-        </p>
+        <p>Áreas nas quais os projetos demonstram aplicação prática, leitura analítica e construção de dashboards voltados à logística e planejamento.</p>
       </div>
 
       <div class="skills-grid">
@@ -896,17 +1092,14 @@ Relatório gerado com sucesso.</div>
     <div class="container">
       <div class="section-heading">
         <h2>Links</h2>
-        <p>
-          Acesso ao currículo, LinkedIn e contato.
-        </p>
+        <p>Acesso ao currículo, LinkedIn e contato.</p>
       </div>
 
       <div class="contact-grid">
         <div class="card contact-card">
           <h3>Apresentação</h3>
           <p>
-            Este portfólio foi desenvolvido para reunir dashboards, projetos e aplicações práticas
-            voltadas à logística, planejamento, indicadores, ERP e análise de dados.
+            Este portfólio foi desenvolvido para reunir dashboards, projetos e aplicações práticas voltadas à logística, planejamento, indicadores, ERP e análise de dados.
           </p>
           <p>
             Para informações adicionais, histórico profissional e currículo, os links estão disponíveis ao lado.
