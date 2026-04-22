@@ -32,14 +32,13 @@
 
         header p {
             margin-top: 10px;
-            font-size: 1rem;
             color: #cbd5e1;
         }
 
         .container {
             width: 90%;
             max-width: 1100px;
-            margin: 0 auto;
+            margin: auto;
             padding: 30px 0;
         }
 
@@ -48,18 +47,15 @@
             padding: 25px;
             margin-bottom: 30px;
             border-radius: 14px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.25);
         }
 
-        .projeto h2 {
-            margin-top: 0;
+        h2 {
             color: #38bdf8;
-            font-size: 1.6rem;
         }
 
-        .projeto p {
+        p {
             line-height: 1.7;
-            color: #e2e8f0;
         }
 
         iframe {
@@ -67,141 +63,140 @@
             height: 600px;
             border: 0;
             border-radius: 10px;
-            margin: 18px 0 20px 0;
-            background-color: #ffffff;
+            margin: 20px 0;
+            background: white;
         }
 
         ul {
             padding-left: 20px;
             line-height: 1.8;
-            color: #e2e8f0;
         }
 
         .sobre {
             background-color: #1e293b;
             padding: 25px;
             border-radius: 14px;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-        }
-
-        .sobre h2 {
-            margin-top: 0;
-            color: #38bdf8;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background-color: #1e293b;
-            color: #94a3b8;
-            font-size: 0.95rem;
             margin-top: 30px;
-            border-top: 1px solid #334155;
+            color: #94a3b8;
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            .projeto h2,
-            .sobre h2 {
-                font-size: 1.3rem;
-            }
-
             iframe {
                 height: 420px;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Portfólio de Logística e Dados</h1>
-        <p>Carlos Roberto</p>
-    </header>
+<header>
+    <h1>Portfólio de Logística e Dados</h1>
+    <p>Carlos Roberto</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <section class="projeto">
-            <h2>📦 Projeto 1 - Análise de Indicadores Logísticos</h2>
-            <p>
-                Dashboard interativo desenvolvido em Power BI para análise de indicadores logísticos,
-                com foco em controle de estoque, giro, cobertura e ruptura de produtos.
-            </p>
+    <!-- PROJETO 1 -->
+    <div class="projeto">
+        <h2>📦 Projeto 1 - Análise de Indicadores Logísticos</h2>
 
-            <p><b>Principais análises:</b></p>
-            <ul>
-                <li>Monitoramento de giro de estoque</li>
-                <li>Análise de cobertura atual dos produtos</li>
-                <li>Identificação de itens em ruptura</li>
-                <li>Visão de itens com baixa cobertura e excesso</li>
-            </ul>
-        </section>
+        <p>
+            Dashboard interativo desenvolvido em Power BI para controle de estoque,
+            com foco em giro, cobertura e identificação de ruptura.
+        </p>
 
-        <section class="projeto">
-            <h2>🚛 Projeto 2 - Análise de Transporte Logístico</h2>
-            <p>
-                Dashboard desenvolvido para monitoramento de performance de transporte, com foco em custos,
-                eficiência operacional e apoio à tomada de decisão.
-            </p>
+        <iframe 
+            title="Projeto-Gestao-Estoque"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNjE2NTBkZmMtZmNlZC00ZTlmLWJhYWItNTUxNDk2ZjAzMjcyIiwidCI6ImUwZjI1MGMzLTlkODgtNDI0My1iNDZjLTU0MzQxNjBiMGFiMiJ9"
+            allowFullScreen="true">
+        </iframe>
 
-            <iframe 
-                title="Projeto-Logistica"
-                width="100%"
-                height="600"
-                src="https://app.powerbi.com/view?r=eyJrIjoiZDJlOTRjNWMtZjQ4Yy00NjIxLThkNDMtZTU4MTAzN2M3NmIyIiwidCI6ImUwZjI1MGMzLTlkODgtNDI0My1iNDZjLTU0MzQxNjBiMGFiMiJ9"
-                frameborder="0"
-                allowFullScreen="true">
-            </iframe>
+        <p><b>Principais análises:</b></p>
+        <ul>
+            <li>Giro de estoque por produto</li>
+            <li>Cobertura atual de estoque</li>
+            <li>Identificação de itens em ruptura</li>
+            <li>Produtos com excesso ou baixa cobertura</li>
+        </ul>
 
-            <p><b>Principais análises:</b></p>
-            <ul>
-                <li>Análise de custo por operação</li>
-                <li>Monitoramento da eficiência logística</li>
-                <li>Identificação de gargalos no transporte</li>
-                <li>Acompanhamento de indicadores de desempenho</li>
-            </ul>
-
-            <p><b>Insights gerados:</b></p>
-            <ul>
-                <li>Identificação de operações com maior impacto em custo</li>
-                <li>Visão de oportunidades de otimização logística</li>
-                <li>Suporte à tomada de decisão com base em indicadores</li>
-            </ul>
-        </section>
-
-        <section class="projeto">
-            <h2>🧠 Projeto 3 - Automação e Análise de Dados</h2>
-            <p>
-                Projeto voltado para automação e análise de dados aplicados à logística, utilizando Python
-                para geração de alertas, apoio operacional e identificação de padrões críticos.
-            </p>
-
-            <p><b>Funcionalidades:</b></p>
-            <ul>
-                <li>Análise automatizada de estoque</li>
-                <li>Identificação de produtos críticos</li>
-                <li>Geração de alertas logísticos</li>
-                <li>Suporte à tomada de decisão</li>
-            </ul>
-        </section>
-
-        <section class="sobre">
-            <h2>👤 Sobre mim</h2>
-            <p>
-                Profissional com experiência em logística, controles operacionais, análise de dados e indicadores.
-                Desenvolvo projetos voltados para estoque, transporte, automação e suporte à tomada de decisão,
-                unindo visão operacional e análise estratégica.
-            </p>
-        </section>
-
+        <p><b>Insights:</b></p>
+        <ul>
+            <li>Produtos com baixa cobertura representam risco operacional</li>
+            <li>Itens com excesso impactam capital parado</li>
+            <li>Possibilidade de otimização de compras</li>
+        </ul>
     </div>
 
-    <footer>
-        © 2026 - Carlos Roberto | Portfólio de Logística e Dados
-    </footer>
+    <!-- PROJETO 2 -->
+    <div class="projeto">
+        <h2>🚛 Projeto 2 - Análise de Transporte Logístico</h2>
+
+        <p>
+            Dashboard voltado para análise de custos logísticos e eficiência de transporte,
+            apoiando decisões estratégicas na operação.
+        </p>
+
+        <iframe 
+            title="Projeto-Transporte-Logistico"
+            src="https://app.powerbi.com/view?r=eyJrIjoiZDJlOTRjNWMtZjQ4Yy00NjIxLThkNDMtZTU4MTAzN2M3NmIyIiwidCI6ImUwZjI1MGMzLTlkODgtNDI0My1iNDZjLTU0MzQxNjBiMGFiMiJ9"
+            allowFullScreen="true">
+        </iframe>
+
+        <p><b>Principais análises:</b></p>
+        <ul>
+            <li>Custo por operação logística</li>
+            <li>Eficiência das transportadoras</li>
+            <li>Identificação de gargalos</li>
+            <li>Monitoramento de KPIs de transporte</li>
+        </ul>
+
+        <p><b>Insights:</b></p>
+        <ul>
+            <li>Operações com maior custo podem ser otimizadas</li>
+            <li>Diferença de performance entre transportadoras</li>
+            <li>Oportunidades de redução de custos logísticos</li>
+        </ul>
+    </div>
+
+    <!-- PROJETO 3 -->
+    <div class="projeto">
+        <h2>🧠 Projeto 3 - Automação e Análise de Dados</h2>
+
+        <p>
+            Projeto de automação em Python para análise de estoque e geração de alertas,
+            auxiliando na tomada de decisão operacional.
+        </p>
+
+        <ul>
+            <li>Identificação automática de ruptura</li>
+            <li>Detecção de excesso de estoque</li>
+            <li>Classificação de prioridades</li>
+            <li>Geração de relatórios analíticos</li>
+        </ul>
+    </div>
+
+    <!-- SOBRE -->
+    <div class="sobre">
+        <h2>👤 Sobre mim</h2>
+        <p>
+            Profissional com experiência em logística, controle operacional e análise de dados.
+            Desenvolvo projetos voltados para estoque, transporte e automação, com foco em eficiência
+            e suporte à tomada de decisão.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 - Carlos Roberto | Portfólio de Logística e Dados
+</footer>
 
 </body>
 </html>
